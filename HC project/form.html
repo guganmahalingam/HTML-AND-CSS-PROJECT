@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.booking-form {
+    margin: 2em auto;
+    padding: 1.5em; /* Reduce padding to make the form more compact */
+    background-color: white;
+    max-width: 400px; /* Reduce max-width to make the form narrower */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, select {
+    width: 100%;
+    padding: 0.6em; /* Reduce padding inside inputs to make them smaller */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em; /* Adjust font size for a more compact look */
+}
+
+button {
+    width: 100%;
+    padding: 0.7em; /* Slightly reduce padding for the button */
+    background-color: #754a9d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em; /* Adjust button font size */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+body {
+    background-color: #a9a9ab;
+    color: #333;
+}
+
+header {
+    background-color: #1341c289;
+    color: rgb(0, 0, 0);
+    padding: 1em 0;
+    text-align: center;
+}
+
+
+
+.booking-form h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: #2da796;
+}   
+
+.form-group {
+    margin-bottom: 1.2em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+
+footer {
+    text-align: center;
+    padding: 2em 0;
+    background-color: #333;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.booking-form img{
+    position: absolute; /* Place the image inside the contact section */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the image covers the section */
+        z-index: -1; /* Ensure the image is behind the form */
+
+}
+
+</style>
+<body>
+    <header>
+        <h1>Flight Ticket Booking</h1>
+    </header>
+
+    <section class="booking-form">
+        <h2>Book Your Flight</h2>
+        <img src="images/img11.jpg" alt="Background Image">
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="departure">Departure City</label>
+                <input type="text" id="departure" name="departure" placeholder="Enter departure city" required>
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination City</label>
+                <input type="text" id="destination" name="destination" placeholder="Enter destination city" required>
+            </div>
+            <div class="form-group">
+                <label for="departure-date">Departure Date</label>
+                <input type="date" id="departure-date" name="departure-date" required>
+            </div>
+            <div class="form-group">
+                <label for="return-date">Return Date</label>
+                <input type="date" id="return-date" name="return-date">
+            </div>
+            <div class="form-group">
+                <label for="class">Class</label>
+                <select id="class" name="class" required>
+                    <option value="economy">Economy</option>
+                    <option value="business">Business</option>
+                    <option value="first-class">First Class</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="passengers">Number of Passengers</label>
+                <input type="number" id="passengers" name="passengers" min="1" value="1" required>
+            </div>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+    
+    <center><b>© 2024 Flight Booking Service. All Rights Reserved.</b></center>
+
+   
+</body>
+</html>

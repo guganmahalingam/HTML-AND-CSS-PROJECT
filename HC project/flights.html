@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Tickets and Prices</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General Styling */
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+    .header {
+    background-color: #166593;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 50px;
+}
+    
+    .flight-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    /* Flight Card Styling */
+    .flight-card {
+        background-color: white;
+        width: 320px;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .flight-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .flight-info {
+        padding: 15px;
+    }
+
+    .flight-info h3 {   
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .flight-info p {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 5px;
+    }
+
+    .flight-price {
+        background-color: #860bbe9f;
+        color: white;
+        padding: 15px;
+    }
+
+    .flight-price h2 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .flight-price p {
+        margin: 5px 0 0;
+        font-size: 14px;
+        color: #e0e0e0;
+    }
+
+   
+
+    .carousel-control-prev, .carousel-control-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    /* Advertisement Area */
+    .advertisement {
+        background-color: #ff5722;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin: 30px auto;
+        width: 100%;
+        max-width: 1200px;
+        border-radius: 10px;
+    }
+
+    .advertisement h2 {
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .advertisement p {
+        font-size: 18px;
+    }
+
+    .advertisement button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #fff;
+        color: #ff5722;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <div class="header"> <b>Flights</b></div>
+     
+    
+
+    <!-- Flight Cards -->
+    <div class="flight-container">
+        <!-- Flight 1 -->
+        <div class="flight-card">
+            <img src="images/img6.webp" alt="Flight to New York">
+            <div class="flight-info">
+                <h3>Flight to New York</h3>
+                <p>Departure: London</p>
+                <p>Arrival: New York</p>
+            </div>
+            <div class="flight-price">
+                <h2>$450</h2>
+                <p>Round Trip</p>
+            </div>
+        </div>
+
+        <!-- Flight 2 -->
+        <div class="flight-card">
+            <img src="images/img3.webp" alt="Flight to Paris">
+            <div class="flight-info">
+                <h3>Flight to Paris</h3>
+                <p>Departure: Berlin</p>
+                <p>Arrival: Paris</p>
+            </div>
+            <div class="flight-price">
+                <h2>€320</h2>
+                <p>One Way</p>
+            </div>
+        </div>
+
+        <!-- Flight 3 -->
+        <div class="flight-card">
+            <img src="images/img5.webp" alt="Flight to Tokyo">
+            <div class="flight-info">
+                <h3>Flight to Tokyo</h3>
+                <p>Departure: Los Angeles</p>
+                <p>Arrival: Tokyo</p>
+            </div>
+            <div class="flight-price">
+                <h2>$780</h2>
+                <p>Round Trip</p>
+            </div>
+        </div>
+        <div class="flight-card">
+            <img src="images/img1.jpg" alt="Flight to New York">
+            <div class="flight-info">
+                <h3>Flight to Chennai</h3>
+                <p>Departure: Malasiya</p>
+                <p>Arrival: Chennai</p>
+            </div>
+            <div class="flight-price">
+                <h2>$550</h2>
+                <p>Round Trip</p>
+            </div>
+        </div>
+        <div class="flight-card">
+            <img src="images/img2.jpeg">
+            <div class="flight-info">
+                <h3>Flight to New Delhi</h3>
+                <p>Departure: Singapore</p>
+                <p>Arrival: New Delhi</p>
+            </div>
+            <div class="flight-price">
+                <h2>$499</h2>
+                <p>Round Trip</p>
+            </div>
+        </div>
+        <div class="flight-card">
+            <img src="images/img4.jpg!d" alt="Flight to New York">
+            <div class="flight-info">
+                <h3>Flight to Belgium</h3>
+                <p>Departure: Dubai/p>
+                <p>Arrival:Belgium </p>
+            </div>
+            <div class="flight-price">
+                <h2>$399</h2>
+                <p>Round Trip</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- Advertisement Area -->
+    <div class="advertisement">
+        <h2>Special Offer on Flights!</h2>
+        <p>Book your flights today and get up to 20% off on select destinations.</p>
+        <a href="learnmore.html"><button>Learn More</button>
+    </div>
+
+
+</body>
+</html>

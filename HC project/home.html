@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    image-resolution: 100px;
+}
+
+
+header {
+    background-color: #3498db;
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.nav-links .btn {
+    background-color: white;
+    color: #3498db;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links .btn:hover {
+    background-color: #2980b9;
+    color: white;
+}
+
+
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?airplane') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.features {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color:#b5abde4b;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #687403;
+}
+
+.card p {
+    color: #030303;
+}
+
+
+footer {
+    background-color: #b51515;
+    color: rgb(18, 17, 17);
+    padding: 20px 0;
+    text-align: center
+}
+.hero img {
+    width: 100%; /* Adjust image size */
+    height: 80%; /* Image will stretch to fill the container */
+    object-fit: cover; /* Ensures the image covers the space without distorting */
+    position: absolute;
+    top: 60%%; /* Move to center vertically */
+    left: 50%; /* Move to center horizontally */
+    transform: translate(-50%, -50%); /* Center the image precisely */
+    z-index: -4;
+}
+
+</style>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <h1 class="logo">FlyAway</h1>
+                <ul class="nav-links">
+                    <li><a class="active">Home</a></li>
+                    <li><a href="flights.html">Flights</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="form.html" class="btn">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <img src="images/img4.jpg!d">
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why Fly with Us?</h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <h3>Best Prices</h3>
+                    <p>We offer the most competitive prices for your next flight journey.</p>
+                </div>
+                <div class="card">
+                    <h3>Worldwide Coverage</h3>
+                    <p>Fly to over 500+ destinations worldwide with our trusted partners.</p>
+                </div>
+                <div class="card">
+                    <h3>24/7 Support</h3>
+                    <p>Our support team is available 24/7 to assist you with any queries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FlyAway. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a></p>
+        </div>
+    </footer>
+</body>
+</html>
